@@ -100,13 +100,15 @@ body {
   max-width: var(--wrapper);
   margin: 10rem auto;
   align-items: center;
+  width: 100%;
 }
 
 .columna {
   flex: 50%;
   max-width: 50%;
-  height: 80vh;
+  height: 60vh;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main__hero {
@@ -131,22 +133,31 @@ body {
 }
 
 .hero__imput {
-  background-color: red;
+  background-image: url("./../images/bg-shorten-desktop.svg");
+  background-color: var(--DarkViolet);
   max-width: var(--wrapper);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .imput__space {
-  padding: 20px 20rem;
+  padding: 1rem 28rem;
   border: none;
   border-radius: 10px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .btn__imput {
-  padding: 17px 3rem;
+  padding: 1rem 3rem;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -158,6 +169,101 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-.btn__imput {
-    background-color: hsl(180, 66%, 59%);
+.btn__imput:hover {
+  background-color: hsl(180, 66%, 59%);
+}
+
+.wraper {
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  margin-top: -15rem;
+  padding: 15rem;
+  width: 100%;
+}
+
+.tittle__2 {
+  text-align: center;
+}
+
+.h2_wraper {
+  font-size: 2.5rem;
+  color: var(--VeryDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.text_wraper {
+  color: var(--GrayishViolet);
+  font-size: 18px;
+  padding-bottom: 5rem;
+}
+
+.cards {
+  display: flex;
+  flex: 3;
+  gap: 4rem;
+  margin-bottom: 20rem;
+  padding-bottom: 25rem;
+}
+
+.card1 {
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  height: 20rem;
+  align-items: center;
+}
+
+.card2 {
+  margin-top: 4rem;
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  height: 20rem;
+  align-items: center;
+}
+
+.card3 {
+  margin-top: 8rem;
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  height: 20rem;
+  align-items: center;
+}
+
+.h3__wraper {
+  font-size: 1.5rem;
+  color: var(--VeryDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.wraper__text {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--GrayishViolet);
+}
+
+.cta {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--DarkViolet);
+  background-image: url(./../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.h2__cta{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+
 }
