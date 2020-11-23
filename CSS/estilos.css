@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&display=swap");
+
+:root {
+  --wrapper: 1440px;
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  max-width: var(--wrapper);
+  margin: 2rem auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  position: absolute;
+  margin-left: 10rem;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  flex: 5;
+  justify-content: center;
+  align-items: right;
+  gap: 2rem;
+  margin-left: 3rem;
+  color: var(--GrayishViolet);
+}
+
+.header__item {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  font-weight: 700;
+}
+
+.header__item:hover {
+  color: var(--DarkViolet);
+}
+
+.header__button {
+  margin-right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--GrayishViolet);
+  border: none;
+}
+
+.link__btn {
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+}
+
+.link__btn:hover {
+  color: var(--DarkViolet);
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  background-color: var(--Cyan);
+  transition: 0.3s all ease-in-out;
+}
+
+.btn:hover {
+  background-color: hsl(180, 66%, 59%);
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--wrapper);
+  margin: 10rem auto;
+  align-items: center;
+}
+
+.columna {
+  flex: 50%;
+  max-width: 50%;
+  height: 80vh;
+  align-items: center;
+}
+
+.main__hero {
+  margin-right: 2rem;
+}
+.main__banner_img {
+  max-width: 100%;
+}
+
+.hero__tittle {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: var(--VeryDarkBlue);
+}
+
+.hero__text {
+  margin-right: 15rem;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  color: var(--GrayishViolet);
+}
+
+.hero__imput {
+  background-color: red;
+  max-width: var(--wrapper);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imput__space {
+  padding: 20px 20rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn__imput {
+  padding: 17px 3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  background-color: var(--Cyan);
+  transition: 0.3s all ease-in-out;
+}
+
+.btn__imput {
+    background-color: hsl(180, 66%, 59%);
+}
